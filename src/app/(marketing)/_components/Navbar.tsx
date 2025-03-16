@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className={cn(
       "z-50 bg-background fixed top-0 flex items-center w-full p-6 dark:bg-[#1F1F1F]",
-      scrolled && "border-b shadow-sm"
+      scrolled && "border-b shadow-sm dark:border-b-gray-700"
     )}>
         <Logo/>
         <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
