@@ -77,7 +77,7 @@ export const Publish = ({ initialData }: PublishProps) => {
             )}
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="w-72" align="end" alignOffset={8} forceMount>
+        <PopoverContent className="w-72 dark:border-neutral-700 dark:bg-[#1F1F1F] z-[999999]" align="end" alignOffset={8} forceMount>
           {initialData.isPublished ? (
             <div className="space-y-4">
               <div className="flex items-center gap-x-2">

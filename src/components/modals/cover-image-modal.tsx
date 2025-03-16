@@ -47,12 +47,12 @@ export const CoverImageModal = () => {
 
   return (
     <Dialog open={coverImage.isOpen} onOpenChange={coverImage.onClose}>
-      <DialogContent>
+      <DialogContent className="dark:bg-[#1F1F1F] dark:border-neutral-700">
         <DialogHeader>
           <h2 className="text-center text-lg font-semibold">Cover Image</h2>
         </DialogHeader>
         <SingleImageDropzone
-          className="w-full outline-none"
+          className="w-full outline-none dark:border-neutral-700"
           disabled={isSubmitting}
           value={file}
           onChange={onChange}

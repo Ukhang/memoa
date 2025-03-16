@@ -10,8 +10,8 @@ export const SettingsModal = () => {
 
     return (
         <Dialog open={settings.isOpen} onOpenChange={settings.onClose}>
-            <DialogContent>
-                <DialogHeader className="border-b pb-3">
+            <DialogContent className="dark:border-neutral-700 dark:bg-[#1F1F1F]">
+                <DialogHeader className="border-b pb-3 dark:border-neutral-700">
                     <h2 className="text-lg font-medium">My Settings</h2>
                 </DialogHeader>
                 <div className="flex items-center justify-between">
