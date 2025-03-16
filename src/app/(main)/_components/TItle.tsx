@@ -54,7 +54,7 @@ export const Title = ({
             {!!initialData && <p>{initialData.icon}</p>}
             {isEditing ? (
                 <Input
-                    className="h-7 px-2 focus:visible:ring-transparent"
+                    className="h-7 px-2 focus:visible:ring-transparent dark:outline-neutral-500"
                     ref={inputRef}
                     onClick={enabledInput}
                     onBlur={disabledInput}
