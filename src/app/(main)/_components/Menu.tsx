@@ -49,7 +49,7 @@ export const Menu = ({ documentId }: MenuProps) => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="w-60"
+        className="w-60 dark:bg-[#1F1F1F] dark:border-neutral-700"
         align="end"
         alignOffset={8}
         forceMount

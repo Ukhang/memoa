@@ -140,7 +140,7 @@ export const Item: React.FC<ItemProps> & {
               </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent
-              className="w-60"
+              className="w-60 dark:border-neutral-700 dark:bg-[#1F1F1F]"
               align="start"
               side="right"
               forceMount
