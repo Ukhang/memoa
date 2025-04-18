@@ -4,40 +4,42 @@ import { Spinner } from "@/components/spinner";
 import { Button } from "@/components/ui/button";
 import { SignInButton } from "@clerk/clerk-react";
 import { useConvexAuth } from "convex/react";
-import { ArrowRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { TextRoll } from "@/components/motion-primitives/text-roll";
+import { TextShimmer } from "@/components/motion-primitives/text-shimmer";
 
 const Heading = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
 
   return (
-    <div className="max-w-3xl space-y-4">
-      <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">
-        Your Ideas, Documents, & Plans. Unified. Welcome to{" "}
-        <span className="underline">Uotion</span>
-      </h1>
-      <h3 className="text-base sm:text-xl md:text-2xl font-medium">
-        Uotion is the connected workspace where <br /> better, faster work
-        happens.
+    <div className="max-w-xl space-y-4">
+      <TextRoll className="text-xl sm:text-2xl md:text-3xl font-semibold text-black dark:text-white leading-normal">
+        Organize your workflow and capture ideas effortlessly.
+      </TextRoll>
+      <h3 className="text-base sm:text-lg md:text-lg font-medium max-w-sm mx-auto text-center">
+        <TextShimmer>
+          Memoa is the connected workspace where better, faster work happens.
+        </TextShimmer>
       </h3>
       {isLoading && (
         <div className="w-full flex items-center justify-center">
-          <Spinner size={"lg"} />
+          <Spinner size={"sm"} />
         </div>
       )}
       {isAuthenticated && !isLoading && (
-        <Button asChild>
+        <Button asChild size={"sm"}>
           <Link href={"/documents"}>
-            Enter Uotion
-            <ArrowRight className="h-4 w-4 ml-2" />
+            Enter Memoa
+            <ChevronRight className="h-4 w-4" />
           </Link>
         </Button>
       )}
       {!isAuthenticated && !isLoading && (
         <SignInButton mode="modal">
-            <Button>
-                Get Uotion free
-                <ArrowRight className="h-4 w-4 ml-2"/>
+            <Button size={"sm"}>
+                Get Memoa free
+                <ChevronRight className="h-4 w-4"/>
             </Button>
         </SignInButton>
       )}

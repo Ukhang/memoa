@@ -6,15 +6,9 @@ const Hero = () => {
       <div className="flex">
         <div className="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:h-[400px] md:w-[400px]">
           <Image
-            src={"/documents.svg"}
+            src={"/documents.png"}
             fill
-            className="object-contain dark:hidden"
-            alt="Documents"
-          />
-          <Image
-            src={"/dark-documents.svg"}
-            fill
-            className="object-contain hidden dark:block"
+            className="object-contain"
             alt="Documents"
           />
         </div>
