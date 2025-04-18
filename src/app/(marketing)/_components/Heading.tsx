@@ -13,18 +13,18 @@ const Heading = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
 
   return (
-    <div className="max-w-xl space-y-4">
-      <TextRoll className="text-xl sm:text-2xl md:text-3xl font-semibold text-black dark:text-white leading-normal">
+    <div className="max-w-lg space-y-4">
+      <TextRoll className="text-2xl sm:text-3xl md:text-4xl font-semibold text-black dark:text-white leading-normal">
         Organize your workflow and capture ideas effortlessly.
       </TextRoll>
-      <h3 className="text-base sm:text-lg md:text-lg font-medium max-w-sm mx-auto text-center">
+      <h3 className="text-base sm:text-lg md:text-xl font-medium max-w-sm mx-auto text-center">
         <TextShimmer>
           Memoa is the connected workspace where better, faster work happens.
         </TextShimmer>
       </h3>
       {isLoading && (
         <div className="w-full flex items-center justify-center">
-          <Spinner size={"sm"} />
+          <Spinner size={"lg"} />
         </div>
       )}
       {isAuthenticated && !isLoading && (
