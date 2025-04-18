@@ -23,7 +23,7 @@ function Hero() {
             transition: {
               duration: 1.2,
               type: 'spring',
-              bounce: 0.3,
+              bounce: 0.4,
             },
           },
         },
