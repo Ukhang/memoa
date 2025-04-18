@@ -8,6 +8,7 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { TextRoll } from "@/components/motion-primitives/text-roll";
 import { TextShimmer } from "@/components/motion-primitives/text-shimmer";
+import { Magnetic } from "@/components/motion-primitives/magnetic";
 
 const Heading = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
@@ -28,20 +29,24 @@ const Heading = () => {
         </div>
       )}
       {isAuthenticated && !isLoading && (
-        <Button asChild size={"sm"}>
-          <Link href={"/documents"}>
-            Enter Memoa
-            <ChevronRight className="h-4 w-4" />
-          </Link>
-        </Button>
+        <Magnetic>
+          <Button asChild size={"sm"}>
+            <Link href={"/documents"}>
+              Enter Memoa
+              <ChevronRight className="h-4 w-4" />
+            </Link>
+          </Button>
+        </Magnetic>
       )}
       {!isAuthenticated && !isLoading && (
-        <SignInButton mode="modal">
+        <Magnetic>
+          <SignInButton mode="modal">
             <Button size={"sm"}>
-                Get Memoa free
-                <ChevronRight className="h-4 w-4"/>
+              Get Memoa free
+              <ChevronRight className="h-4 w-4" />
             </Button>
-        </SignInButton>
+          </SignInButton>
+        </Magnetic>
       )}
     </div>
   );
