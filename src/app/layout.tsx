@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Uotion - notion clone",
+  title: "Memoa - effortless note-taking.",
   description:
-    "Uotion is a Notion clone designed to streamline task management and note-taking.",
+    "Memoa is a Notion-inspired app designed to streamline workflow organization and effortless note-taking.",
   icons: {
     icon: [
       {
