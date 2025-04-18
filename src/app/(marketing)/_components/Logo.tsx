@@ -25,7 +25,7 @@ const Logo = () => {
             className="hidden dark:block"
         />
         <p className={cn("font-medium text-black dark:text-white", font.className)}>
-            Uotion
+            Memoa
         </p>
     </div>
   )
