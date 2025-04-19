@@ -6,6 +6,8 @@
     <strong> Memoa is a Notion-inspired app designed to streamline <br/> workflow organization and effortless note-taking.</strong>
 </p>
 
+https://github.com/user-attachments/assets/e1432f95-2c54-4fea-89dd-1bf3d1a2eb52
+
 ---
 
 ## 📦 Installation
