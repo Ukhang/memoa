@@ -7,7 +7,7 @@ import {
 
 function AccordionInfo() {
   return (
-    <section className="max-w-xl w-full mt-10 md:mt-14 lg:mt-16 space-y-4">
+    <section className="max-w-xl w-full mt-10 sm:mt-14 md:mt-16 space-y-4 mx-auto">
       <h2 className="font-medium text-lg md:text-xl text-black dark:text-white text-center">
         Frequently Asked Questions
       </h2>
