@@ -1,26 +1,56 @@
-import Image from "next/image";
+import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
 
-const Hero = () => {
+function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center max-w-5xl">
-      <div className="flex">
-        <div className="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:h-[400px] md:w-[400px]">
-          <Image
-            src={"/documents.svg"}
-            fill
-            className="object-contain dark:hidden"
-            alt="Documents"
-          />
-          <Image
-            src={"/dark-documents.svg"}
-            fill
-            className="object-contain hidden dark:block"
-            alt="Documents"
-          />
-        </div>
-      </div> 
-    </div>
-  )
+    <AnimatedGroup
+      className='grid grid-cols-2 gap-4 p-8 md:grid-cols-3 lg:grid-cols-4 max-w-3xl'
+      variants={{
+        container: {
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.05,
+            },
+          },
+        },
+        item: {
+          hidden: { opacity: 0, y: 40, filter: 'blur(4px)' },
+          visible: {
+            opacity: 1,
+            y: 0,
+            filter: 'blur(0px)',
+            transition: {
+              duration: 1.2,
+              type: 'spring',
+              bounce: 0.4,
+            },
+          },
+        },
+      }}
+    >
+      <img
+        src='/document1.png'
+        alt='impressionist painting, uploaded to Cosmos'
+        className='h-auto w-full rounded-xl'
+      />
+      <img
+        src='/document2.png'
+        alt='impressionist painting, uploaded to Cosmos'
+        className='h-auto w-full rounded-xl'
+      />
+      <img
+        src='/document3.png'
+        alt='impressionist painting, uploaded to Cosmos'
+        className='h-auto w-full rounded-xl md:block hidden'
+      />
+      <img
+        src='/document4.png'
+        alt='impressionist painting, uploaded to Cosmos'
+        className='h-auto w-full rounded-xl lg:block hidden'
+      />
+    </AnimatedGroup>
+  );
 }
 
 export default Hero;
