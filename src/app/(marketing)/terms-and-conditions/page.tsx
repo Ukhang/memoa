@@ -60,7 +60,7 @@ const TermsAndConditionsPage = () => {
               4. Limitation of Liability
             </h2>
             <p className="text-muted-foreground">
-              Memoa is provided "as is" without warranties of any kind. We are
+              Memoa is provided &quot;as is&quot; without warranties of any kind. We are
               not liable for any damages resulting from your use of the
               application.
             </p>
