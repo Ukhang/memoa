@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const font = Poppins({
     subsets: ["latin"],
@@ -9,7 +10,7 @@ const font = Poppins({
 
 const Logo = () => {
   return (
-    <div className="hidden md:flex items-center gap-x-2">
+    <Link className="hidden md:flex items-center gap-x-2" href="/">
         <Image
             src={"/logo.svg"}
             height={24}
@@ -27,7 +28,7 @@ const Logo = () => {
         <p className={cn("font-medium text-black dark:text-white", font.className)}>
             Memoa
         </p>
-    </div>
+    </Link>
   )
 }
 
