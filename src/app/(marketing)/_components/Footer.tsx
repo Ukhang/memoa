@@ -24,13 +24,15 @@ const Footer = () => {
           Ukhang
         </Link>
       </div>
-      <p className="text-sm mt-2 text-muted-foreground">© {year} Memoa. All rights reserved.</p>
+      <p className="text-sm mt-2 text-muted-foreground">
+        © {year} Memoa. All rights reserved.
+      </p>
       <div className="md:ml-auto w-full justify-between md:justify-end flex items-center gap-x-2 text-muted-foreground mt-2">
         <Button variant={"ghost"} size={"sm"}>
-          Privacy Policy
+          <Link href={"/privacy-policy"}>Privacy Policy</Link>
         </Button>
         <Button variant={"ghost"} size={"sm"}>
-          Terms & Conditions
+          <Link href={"/terms-and-conditions"}>Terms & Conditions</Link>
         </Button>
       </div>
     </footer>
