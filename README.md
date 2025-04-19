@@ -1,10 +1,10 @@
 <div align="center">
- <img src="https://github.com/user-attachments/assets/71f245ac-40f5-44ed-9904-a498fe3fe392" alt="memoa" style="margin-right: 10px;">
+ <img src="https://github.com/user-attachments/assets/d9942d91-735e-48c0-9630-6829d47ec2bd" alt="memoa" style="margin-right: 10px;">
 </div>
-<p align="center">
-    <strong>Memoa is a Notion clone designed to streamline <br/> workflow organization and note-taking.</strong>
-</p>
 
+<p align="center">
+    <strong> Memoa is a Notion-inspired app designed to streamline <br/> workflow organization and effortless note-taking.</strong>
+</p>
 ---
 
 ## 📦 Installation
