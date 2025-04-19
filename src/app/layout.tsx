@@ -54,7 +54,7 @@ export default function RootLayout({
               defaultTheme="system"
               enableSystem
               disableTransitionOnChange
-              storageKey="uotion-theme"
+              storageKey="memoa-theme"
             >
               <Toaster position="bottom-right" />
               <ModalProvider />

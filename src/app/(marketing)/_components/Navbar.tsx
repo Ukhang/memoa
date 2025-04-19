@@ -32,7 +32,7 @@ const Navbar = () => {
               </SignInButton>
               <SignInButton mode="modal">
                 <Button size={"sm"}>
-                  Get Uotion Free
+                  Get Memoa Free
                 </Button>
               </SignInButton>
             </>
@@ -41,7 +41,7 @@ const Navbar = () => {
             <>
               <Button variant={"ghost"} size={"sm"} asChild>
                 <Link href={"/documents"}>
-                  Enter Uotion
+                  Enter Memoa
                 </Link>
               </Button>
               <UserButton

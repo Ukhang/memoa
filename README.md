@@ -1,8 +1,8 @@
 <div align="center">
- <img src="https://github.com/user-attachments/assets/71f245ac-40f5-44ed-9904-a498fe3fe392" alt="uotion" style="margin-right: 10px;">
+ <img src="https://github.com/user-attachments/assets/71f245ac-40f5-44ed-9904-a498fe3fe392" alt="memoa" style="margin-right: 10px;">
 </div>
 <p align="center">
-    <strong>Uotion is a Notion clone designed to streamline <br/> workflow organization and note-taking.</strong>
+    <strong>Memoa is a Notion clone designed to streamline <br/> workflow organization and note-taking.</strong>
 </p>
 
 ---
@@ -11,8 +11,8 @@
 
 1. **Clone the repository:**  
 ```bash
-git clone https://github.com/Ukhang/uotion.git
-cd uotion
+git clone https://github.com/Ukhang/memoa.git
+cd memoa
 ```
 
 2. **Install the dependencies:**  
