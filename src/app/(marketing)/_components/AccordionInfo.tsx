@@ -38,7 +38,7 @@ function AccordionInfo() {
           </AccordionTrigger>
           <AccordionContent>
             <p className="text-zinc-500 dark:text-zinc-400">
-            Anyone looking for a simple yet effective note-taking and workflow management tool can benefit from Memoa. Whether you're a student managing study notes, a professional organizing projects, or a creative mind brainstorming ideas, Memoa adapts to your needs.
+            Anyone looking for a simple yet effective note-taking and workflow management tool can benefit from Memoa. Whether you&lsquo;re a student managing study notes, a professional organizing projects, or a creative mind brainstorming ideas, Memoa adapts to your needs.
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -48,7 +48,7 @@ function AccordionInfo() {
           </AccordionTrigger>
           <AccordionContent>
             <p className="text-zinc-500 dark:text-zinc-400">
-              The vision behind Memoa is to create a digital space where thoughts, tasks, and ideas can flow naturally. It's about empowering individuals to stay organized, creative, and focused—without fighting against the tool itself.
+              The vision behind Memoa is to create a digital space where thoughts, tasks, and ideas can flow naturally. It&lsquo;s about empowering individuals to stay organized, creative, and focused—without fighting against the tool itself.
             </p>
           </AccordionContent>
         </AccordionItem>
