@@ -24,7 +24,7 @@ const Footer = () => {
           Ukhang
         </Link>
       </div>
-      <p className="text-sm mt-2">© {year} Memoa. All rights reserved.</p>
+      <p className="text-sm mt-2 text-muted-foreground">© {year} Memoa. All rights reserved.</p>
       <div className="md:ml-auto w-full justify-between md:justify-end flex items-center gap-x-2 text-muted-foreground mt-2">
         <Button variant={"ghost"} size={"sm"}>
           Privacy Policy
