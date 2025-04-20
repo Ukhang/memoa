@@ -7,13 +7,13 @@ import {
 
 function AccordionInfo() {
   return (
-    <section className="max-w-xl w-full mt-10 sm:mt-14 md:mt-16 space-y-4 mx-auto">
-      <h2 className="font-medium text-lg md:text-xl text-black dark:text-white text-center">
+    <section className="max-w-[620px] w-full mt-10 sm:mt-14 md:mt-16 space-y-4 mx-auto">
+      <h2 className="font-medium text-xl md:text-2xl text-black dark:text-white text-left">
         Frequently Asked Questions
       </h2>
-      <Accordion className="flex w-full flex-col divide-y divide-zinc-200 dark:divide-zinc-700">
+      <Accordion className="flex w-full flex-col divide-y divide-zinc-200 dark:divide-zinc-700 text-left">
         <AccordionItem value="getting-started">
-          <AccordionTrigger className="w-full py-0.5 text-left text-zinc-950 dark:text-zinc-50">
+          <AccordionTrigger className="w-full py-0.5 text-left text-zinc-950 dark:text-zinc-50 font-medium">
             What is Memoa?
           </AccordionTrigger>
           <AccordionContent>
@@ -23,7 +23,7 @@ function AccordionInfo() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="animation-properties">
-          <AccordionTrigger className="w-full py-0.5 text-left text-zinc-950 dark:text-zinc-50">
+          <AccordionTrigger className="w-full py-0.5 text-left text-zinc-950 dark:text-zinc-50 font-medium">
             Why was Memoa created?
           </AccordionTrigger>
           <AccordionContent>
@@ -33,7 +33,7 @@ function AccordionInfo() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="advanced-usage">
-          <AccordionTrigger className="w-full py-0.5 text-left text-zinc-950 dark:text-zinc-50">
+          <AccordionTrigger className="w-full py-0.5 text-left text-zinc-950 dark:text-zinc-50 font-medium">
           Who can benefit from Memoa?
           </AccordionTrigger>
           <AccordionContent>
@@ -43,7 +43,7 @@ function AccordionInfo() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="community-and-support">
-          <AccordionTrigger className="w-full py-0.5 text-left text-zinc-950 dark:text-zinc-50">
+          <AccordionTrigger className="w-full py-0.5 text-left text-zinc-950 dark:text-zinc-50 font-medium">
             What is the vision behind Memoa?
           </AccordionTrigger>
           <AccordionContent>
